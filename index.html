@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team 7 Meeting Minutes</title>
+    <meta charset="UTF-8"> <!--  to set the character set to be UTF-8, which includes most characters from written languages  -->
+    <meta name="description" content="Meeting minutes for Team 7 Lab 2 project discussion"> <!-- brief description of the webpage for search engines -->
+    <link rel="icon" href="screenshots/diagram.jpg"> <!-- sets the small icon shown in the browser tab -->
+  </head>
+  <body>
+    <header>
+      <h1>Team 7 Meeting Minutes</h1>
+      <p><strong>Project:</strong> Study Buddy App</p> <!--marks text as strong importance-->
+      <p><b>Meeting Type:</b> Brainstorming and task planning</p>
+
+      <nav> <!--represents a navigation section-->
+        <ul>
+          <li><a href="#attendance">Attendance</a></li> <!-- for a: creates a link-->
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new">New Business</a></li>
+          <li><a href="#comments">Comments</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#form">Feedback Form</a></li>
+        </ul>
+      </nav>
+
+      <hr> <!-- create horizontal line-->
+    </header>
+
+    <main>
+      <section>
+        <h2>Meeting Information</h2>
+        <h3>Date</h3>
+        <p>April 7, 2026</p>
+
+        <h3>Topic</h3>
+        <p>Initial planning for features, team roles, and timeline.</p>
+      </section>
+
+      <section id="attendance"> <!--hyperlink above jumps to <section id="attendance">-->
+        <h2>Attendance List</h2>
+        <ul>
+          <li>Nhan</li>
+          <li>Alex</li>
+          <li>Maria</li>
+          <li>Kevin</li>
+        </ul>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review project idea</li>
+          <li>Discuss possible app features</li>
+          <li>Assign team roles</li>
+          <li>Plan next meeting</li>
+        </ol>
+      </section>
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>Since this is the first meeting, there was no unfinished business from the previous meeting.</p>
+      </section>
+
+      <section id="new">
+        <h2>New Business</h2>
+
+        <div>
+          <p>
+            The team discussed building a <strong>Study Buddy App</strong> that helps students
+            organize assignments, find study partners, and track deadlines.
+          </p>
+
+          <p>
+            One idea was to include a <em>calendar page</em> for due dates and a <!--emphasis on words-->
+            <em>discussion board</em> where students can post study session plans.
+          </p>
+
+          <p>
+            Alex suggested that the first version should stay <i>simple</i> and focus on
+            core features only.<br><!--break a line-->
+            Maria agreed and said the team should avoid making the project too large.
+          </p>
+
+          <p>
+            Kevin emphasized the importance of <span>clear task ownership</span> so everyone
+            knows what they are responsible for.
+          </p>
+        </div>
+
+        <h3>Task Assignments</h3>
+        <ul>
+          <li><strong>Nhan:</strong> Draft homepage layout</li>
+          <li><strong>Alex:</strong> Research app feature ideas</li>
+          <li><strong>Maria:</strong> Create meeting notes template</li>
+          <li><strong>Kevin:</strong> Prepare simple project timeline</li>
+        </ul>
+      </section>
+
+      <section id="comments">
+        <h2>Miscellaneous Comments / Questions / Concerns</h2>
+        <p>
+          A team member asked whether the app should support mobile screens first or desktop first.
+        </p>
+        <p>
+          Another concern was whether the team should use plain HTML first before moving to more advanced tools later.
+        </p>
+
+        <details> <!--creates a collapsible area that the user can open and close-->
+          <summary>Extra meeting note</summary>
+          <p>
+            The team agreed that for now, focusing on a clean and working basic version is more important than adding extra features.
+          </p>
+        </details>
+      </section>
+
+      <section id="media">
+        <h2>Pictures and Media</h2>
+
+        <h3>Whiteboard / Diagram</h3>
+        <img src="screenshots/diagram.jpg" alt="Whiteboard sketch of the Study Buddy App feature layout" width="300">
+
+        <p>
+          The image above represents a rough discussion of the app structure, including a homepage,
+          calendar section, and study group feature.
+        </p>
+
+        <h3>Audio Recording</h3>
+        <audio controls> <!--add built-in pause/volume controls-->
+          <source src="assets/bird-sound.m4a" type="audio/mp4">
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>Replace this file with your own short meeting audio recording later.</p>
+
+        <h3>Video Recording</h3>
+        <video controls width="320">
+          <source src="assets/VitaSync.mov" type="video/quicktime">
+          Your browser does not support the video tag.
+        </video>
+
+        <p>Replace this file with your own short meeting video recording later.</p>
+      </section>
+
+      <section>
+        <h2>Reference Links</h2>
+        <p>
+          Team shared a sample inspiration link:
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Reference</a> <!--target = blank lets open the link in a new tab-->
+        </p>
+      </section>
+
+      <section id="form">
+        <h2>Simple Team Feedback Form</h2>
+
+        <form>
+          <fieldset> <!--title for the <fieldset>-->
+            <legend>Submit Your Feedback</legend>
+
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+            </p>
+
+            <p>
+              <label for="meeting-date">Next Available Date:</label>
+              <input type="date" id="meeting-date" name="meeting-date">
+            </p>
+
+            <p>Which task area do you prefer?</p>
+            <input type="radio" id="design" name="role" value="design">
+            <label for="design">Design</label><br>
+
+            <input type="radio" id="frontend" name="role" value="frontend">
+            <label for="frontend">Frontend</label><br>
+
+            <input type="radio" id="planning" name="role" value="planning">
+            <label for="planning">Planning</label>
+
+            <p>What should the team focus on next?</p>
+            <input type="checkbox" id="ui" name="focus" value="ui">
+            <label for="ui">UI layout</label><br>
+
+            <input type="checkbox" id="features" name="focus" value="features">
+            <label for="features">Core features</label><br>
+
+            <input type="checkbox" id="documentation" name="focus" value="documentation">
+            <label for="documentation">Documentation</label>
+
+            <p>
+              <label for="tool-choice">Preferred development tool:</label><br>
+              <input list="tools" id="tool-choice" name="tool-choice">
+              <datalist id="tools">
+                <option value="VS Code"></option>
+                <option value="GitHub"></option>
+                <option value="Live Server"></option>
+                <option value="Chrome DevTools"></option>
+              </datalist>
+            </p>
+
+            <p>
+              <label for="progress">Current confidence level:</label>
+              <select id="progress" name="progress">
+                <option value="">--Choose one--</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="notes">Additional Notes:</label><br>
+              <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>Created for CSE 110 Lab 2</p>
+      <p>Last updated: April 7, 2026</p>
+    </footer>
+  </body>
+</html>
